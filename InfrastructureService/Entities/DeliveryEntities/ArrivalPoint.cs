@@ -27,9 +27,4 @@ public class ArrivalPoint : BaseDeliveryEntity
     /// Место расположения
     /// </summary>
     public Location Location { get; set; } = null!;
-
-    /// <summary>
-    /// Страна расположения
-    /// </summary>
-    public Country Country { get; set; } = null!;
 }

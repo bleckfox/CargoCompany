@@ -7,5 +7,13 @@ namespace InfrastructureService.Entities.DeliveryEntities;
 /// </summary>
 public class Country : BaseDeliveryEntity
 {
-    // Дополнительные свойства при необходимости
+    /// <summary>
+    /// Список расположений
+    /// </summary>
+    public List<Location> Locations { get; set; } = null!;
+
+    /// <summary>
+    /// Список таможенных постов в стране
+    /// </summary>
+    public List<CustomHouse> CustomHouses { get; set; } = null!;
 }

@@ -14,9 +14,9 @@ public class ShipmentDetail : BaseEntity
     public Shipment Shipment { get; set; } = null!;
 
     /// <summary>
-    /// Пункт прибытия/отправки
+    /// Пункты прибытия/отправки
     /// </summary>
-    public ArrivalPoint ArrivalPoint { get; set; } = null!;
+    public List<ArrivalPoint> ArrivalPoints { get; set; } = null!;
     
     /// <summary>
     /// Дата проверки

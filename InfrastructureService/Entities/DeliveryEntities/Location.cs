@@ -11,4 +11,14 @@ public class Location : BaseDeliveryEntity
     /// Почтовый индекс
     /// </summary>
     public string PostCode { get; set; } = null!;
+
+    /// <summary>
+    /// Список точек прибытия/отправки
+    /// </summary>
+    public List<ArrivalPoint> ArrivalPoints { get; set; } = null!;
+    
+    /// <summary>
+    /// Список складов
+    /// </summary>
+    public List<Storage> Storages { get; set; } = null!;
 }
