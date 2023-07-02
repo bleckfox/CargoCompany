@@ -1,6 +1,6 @@
-﻿using System.Text.Json;
-using DatabaseService.Context;
+﻿using DatabaseService.Context;
 using InfrastructureService.Entities.CompanyEntities;
+using InfrastructureService.Utils;
 using Microsoft.EntityFrameworkCore;
 using RepositoryService.Interfaces.CompanyRepository;
 
@@ -18,10 +18,11 @@ public class AgentRepository : IAgentRepository
     public async Task<string> GetAgentById(int id)
     {
         var agent = await _context.Agents
+            .Where(x => x.Id == id)
             .FirstOrDefaultAsync()
                     ?? throw new InvalidOperationException("Agent not found!");
         
-        return JsonSerializer.Serialize(agent);
+        return CustomSerializer.Serialize(agent);
     }
 
     public Task<bool> CreateAgent(Agent agent)

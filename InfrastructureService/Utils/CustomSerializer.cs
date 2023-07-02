@@ -2,6 +2,9 @@
 
 namespace InfrastructureService.Utils;
 
+/// <summary>
+/// Кастомный де/сериализатор json
+/// </summary>
 public class CustomSerializer
 {
     private static JsonSerializerOptions Options => 
