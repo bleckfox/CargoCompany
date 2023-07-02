@@ -9,7 +9,7 @@ public interface IBrokerRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Брокер</returns>
-    Task<Broker> GetBrokerById(int id);
+    Task<string> GetBrokerById(int id);
 
     /// <summary>
     /// Создание брокера

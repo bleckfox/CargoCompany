@@ -9,7 +9,7 @@ public interface IProductRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Продукт</returns>
-    Task<Product> GetProductById(int id);
+    Task<string> GetProductById(int id);
 
     /// <summary>
     /// Создание продукта

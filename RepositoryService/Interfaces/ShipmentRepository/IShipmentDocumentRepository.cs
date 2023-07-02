@@ -9,7 +9,7 @@ public interface IShipmentDocumentRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Документ отгрузки</returns>
-    Task<ShipmentDocument> GetShipmentDocumentById(int id);
+    Task<string> GetShipmentDocumentById(int id);
 
     /// <summary>
     /// Создание документа отгрузки

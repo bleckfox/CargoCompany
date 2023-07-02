@@ -9,7 +9,7 @@ public interface ISupplierRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Поставщик</returns>
-    Task<Supplier> GetSupplierById(int id);
+    Task<string> GetSupplierById(int id);
 
     /// <summary>
     /// Создание поставщика

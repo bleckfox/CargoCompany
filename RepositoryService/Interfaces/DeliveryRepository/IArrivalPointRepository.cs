@@ -9,7 +9,7 @@ public interface IArrivalPointRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Пункт прибытия</returns>
-    Task<ArrivalPoint> GetArrivalPointById(int id);
+    Task<string> GetArrivalPointById(int id);
 
     /// <summary>
     /// Создание пункта прибытия

@@ -9,7 +9,7 @@ public interface ICountryRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Страна</returns>
-    Task<Country> GetCountryById(int id);
+    Task<string> GetCountryById(int id);
 
     /// <summary>
     /// Создание страны

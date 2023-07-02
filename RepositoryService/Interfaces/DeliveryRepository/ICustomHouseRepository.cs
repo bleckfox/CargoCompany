@@ -9,7 +9,7 @@ public interface ICustomHouseRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Таможенный пост</returns>
-    Task<CustomHouse> GetCustomHouseById(int id);
+    Task<string> GetCustomHouseById(int id);
 
     /// <summary>
     /// Создание таможенного постп

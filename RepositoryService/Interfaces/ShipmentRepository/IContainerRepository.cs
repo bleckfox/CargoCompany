@@ -9,7 +9,7 @@ public interface IContainerRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Контейнер</returns>
-    Task<Container> GetContainerById(int id);
+    Task<string> GetContainerById(int id);
 
     /// <summary>
     /// Создание контейнера

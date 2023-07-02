@@ -7,7 +7,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\DatabaseService\DatabaseService.csproj" />
       <ProjectReference Include="..\InfrastructureService\InfrastructureService.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Repositories\DeliveryRepo" />
+      <Folder Include="Repositories\ShipmentRepo" />
     </ItemGroup>
 
 </Project>

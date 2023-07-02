@@ -9,7 +9,7 @@ public interface IStorageRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Хранилище</returns>
-    Task<Storage> GetStorageById(int id);
+    Task<string> GetStorageById(int id);
 
     /// <summary>
     /// Создание хранилища

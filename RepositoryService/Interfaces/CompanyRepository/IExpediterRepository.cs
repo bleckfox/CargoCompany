@@ -9,7 +9,7 @@ public interface IExpediterRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Экспедитер</returns>
-    Task<Expediter> GetExpediterById(int id);
+    Task<string> GetExpediterById(int id);
 
     /// <summary>
     /// Создание экспедитера

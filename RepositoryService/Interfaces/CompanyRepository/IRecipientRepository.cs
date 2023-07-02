@@ -9,7 +9,7 @@ public interface IRecipientRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Получатель</returns>
-    Task<Recipient> GetRecipientById(int id);
+    Task<string> GetRecipientById(int id);
 
     /// <summary>
     /// Создание получателя

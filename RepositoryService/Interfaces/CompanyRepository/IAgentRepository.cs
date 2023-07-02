@@ -9,7 +9,7 @@ public interface IAgentRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Агент</returns>
-    Task<Agent> GetAgentById(int id);
+    Task<string> GetAgentById(int id);
     
     /// <summary>
     /// Создание агента

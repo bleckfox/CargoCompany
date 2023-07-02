@@ -9,7 +9,7 @@ public interface IOrderRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Заказ</returns>
-    Task<Order> GetOrderById(int id);
+    Task<string> GetOrderById(int id);
 
     /// <summary>
     /// Создание заказа

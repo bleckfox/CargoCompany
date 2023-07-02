@@ -9,7 +9,7 @@ public interface IShipmentDetailRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Детали отправления</returns>
-    Task<ShipmentDetail> GetShipmentDetailById(int id);
+    Task<string> GetShipmentDetailById(int id);
 
     /// <summary>
     /// Создание деталей отправления

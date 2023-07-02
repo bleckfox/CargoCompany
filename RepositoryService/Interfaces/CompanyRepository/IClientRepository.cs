@@ -9,7 +9,7 @@ public interface IClientRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Клиент</returns>
-    Task<Client> GetClientById(int id);
+    Task<string> GetClientById(int id);
 
     /// <summary>
     /// Создание клиента

@@ -9,7 +9,7 @@ public interface ILocationRepository
     /// </summary>
     /// <param name="id">Идентификатор</param>
     /// <returns>Локация</returns>
-    Task<Location> GetLocationById(int id);
+    Task<string> GetLocationById(int id);
 
     /// <summary>
     /// Создание локации
